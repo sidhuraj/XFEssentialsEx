@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinEssentialsEx.MainPage">
+    <ScrollView>
+        <StackLayout>
+       
+
+            <Entry x:Name="etMobileNumber" Placeholder="Enter Mobile Number"/>
+            <Entry x:Name="etMessage" Placeholder="Enter Message" Keyboard="Chat"/>
+
+            <Button x:Name="btnPhoneCall" Text="Call"/>
+
+            <Button x:Name="btnSendMesage" Text="SMS"/>
+
+
+            <Entry x:Name="etEmailId" Placeholder="Enter Email" Keyboard="Email"/>
+            <Entry x:Name="etSubject" Placeholder="Enter Subject" />
+            <Entry x:Name="etDescription" Placeholder="Enter Description" />
+            <Button x:Name="btnSeendEmail" Text="Email"/>
+
+            <Label Text="Text To Speak" HorizontalOptions="Center" TextColor="Crimson" FontSize="Default"/>
+            <Entry x:Name="etData" Placeholder="What to speak"/>
+            <Button x:Name="btnSpeak" Text="Speak now" BackgroundColor="Coral" TextColor="AntiqueWhite" CornerRadius="25" />
+
+            <Label Text="Browser" HorizontalOptions="Center" TextColor="Accent" FontSize="Header"/>
+            <Entry x:Name="eturl" Placeholder="Please enter Url.."/>
+            <Button x:Name="btnBrowse" Text="Go To Page" BackgroundColor="Black" TextColor="AntiqueWhite" />
+            <Button x:Name="btnHistory" Text="History" BackgroundColor="Black" TextColor="AntiqueWhite" />
+
+            <Label Text="options:"/>
+            <Label Text="Name"/>
+            <Entry x:Name="EntryName"/>
+            <Label Text="Latitude" Margin="0,10,0,10"/>
+            <Entry Keyboard="Numeric" Text="47.603230" x:Name="EntryLatitude"/>
+            <Label x:Name="Longitude"/>
+            <Entry Keyboard="Numeric" Text="-122.330276" x:Name="EntryLongitude"/>
+            <Button Text="Open coordinates" x:Name="ButtonOpenCoords" />
+
+
+            <Button x:Name="btnMaps" Text="Maps" TextColor="White" BackgroundColor="Black"/>
+
+            <Label Text="Torch" FontSize="Large"/>
+            <Switch x:Name="swOnOf" />
+
+            <Slider Minimum="0" Maximum="5000" Value="100" x:Name="Slidertime"/>
+            <Button Text="vibrate" x:Name="Buttonvibrate"/>
+            <Button Text="cancel" x:Name="buttoncancel"/>
+
+            <Label x:Name="LabelCurrent" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" TextColor="Black"/>
+            <Label x:Name="LabelPast" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" TextColor="Black"/>
+            <Label x:Name="LabelNew" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" TextColor="Black"/>
+
+            <Entry Placeholder="Enter value" x:Name="Entryvalue"/>
+            <Button Text="Calculator" x:Name="ButtonCalculate"/>
+            <Label x:Name="Labelvalue"/>
+
+            <Entry Text="" Placeholder="what do u want to share" x:Name="EntryShare" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+            <Button Text="Share" x:Name="Buttonshare" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" TextColor="Black"  BackgroundColor="Transparent"/>
+
+            <Label x:Name="LabelForgotPassword" HorizontalOptions="CenterAndExpand" Text="Forgot Password?" TextColor="Blue" TextDecorations="Underline"/>
+
+
+            <Button Text="Do some work!" x:Name="buttn"/>
+            <Label x:Name="LabelUpdate"/>
+            <ActivityIndicator IsRunning="False" IsVisible="True" x:Name="LoadingIndicator"/>
+
+            <Button Text="OpenLyft" x:Name="ButtonLauncher"/>
+
+            <Label x:Name="LabelDeviceInfo" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" TextColor="Black"/>
+
+            <Label Text="Enter Pin:"/>
+            <Entry x:Name="EntryPin" Placeholder="4 digit Pin"/>
+            <Button Text="Submit" x:Name="PinButton"/>
+
+            <Label x:Name="LabelAppInfo" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" TextColor="Black"/>
+            <Label x:Name="LabelVersionInfo" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" TextColor="Black"/>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
